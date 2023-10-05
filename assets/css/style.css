@@ -861,11 +861,7 @@
 }
 
 @media (min-width:1200px) {
-    .pos-abs1 {
-        position: absolute;
-        top: 35%;
-        left: 31%;
-    }
+
 
     .card2 {
         padding: 54px 123px 54px 136px;
@@ -917,7 +913,7 @@
     }
 
     .pr-lg-320 {
-        padding-right: 320px;
+        padding-right: 263px;
     }
 
     .mt100 {
@@ -932,6 +928,16 @@
 @media (min-width:1700px) {
     .mt100 {
         margin-top: 100%;
+    }
+
+    .pos-abs1 {
+        position: absolute;
+        top: 35%;
+        left: 31%;
+    }
+
+    .pr-lg-320 {
+        padding-right: 320px;
     }
 
 }
