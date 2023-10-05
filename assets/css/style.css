@@ -19,14 +19,24 @@
     --fs-lg: 36px;
     --fs-xl: 40px;
     --fs-2xl: 40px;
+    /* colors */
+    --bs-darklight: darkblue;
+    --bs-yellow: #D2DA60;
+    --bs-darkblue: #010080;
+    --bs-purple: #9003E5;
+    --bs-black: #00000099;
+    --bs-white: #FFFFFF;
+    --bs-offwhite: #F0F0F0;
+    --bs-lightgrey: #EEEEEE;
+    --bs-basicblack: black;
 }
 
 .bg-yellow {
-    background-color: #D2DA60;
+    background-color: var(--bs-yellow);
 }
 
 .bg-blue {
-    background: #010080;
+    background: var(--bs-darkblue);
 }
 
 .bg1 {
@@ -45,8 +55,7 @@
 }
 
 .voilet {
-    color: #8A3E74;
-    ;
+    color: var(--bs-darklight);
 }
 
 .header {
@@ -56,7 +65,7 @@
     line-height: 27px;
     letter-spacing: 0em;
     text-align: left;
-    color: #9003E5;
+    color: var(--bs-purple);
     transition: all 300ms linear;
     border: 1px solid transparent;
 }
@@ -118,7 +127,7 @@
     line-height: 96px;
     letter-spacing: 0em;
     text-align: left;
-    color: #010080;
+    color: var(--bs-darkblue);
 
 }
 
@@ -129,13 +138,13 @@
     line-height: 54px;
     letter-spacing: 0em;
     text-align: left;
-    color: #FFFFFF;
+    color: var(--bs-white);
 }
 
 .hoverbox {
     width: 100%;
     height: 100%;
-    background-color: #00000099;
+    background-color: var(--bs-black);
     position: absolute;
     top: 0;
     left: -150%;
@@ -146,7 +155,7 @@
     width: 32.43px;
     height: 32.21px;
     border-radius: 50%;
-    background-color: #FFFFFF;
+    background-color: var(--bs-white);
 }
 
 .box2 {
@@ -160,7 +169,7 @@
 
 .box3 {
     padding: 25px;
-    background: #F0F0F0;
+    background: var(--bs-offwhite);
     border-radius: 10px;
     border: none;
 }
@@ -189,7 +198,7 @@
     line-height: 54px;
     letter-spacing: 0em;
     text-align: center;
-    color: white;
+    color: var(--bs-white);
 
 }
 
@@ -200,7 +209,7 @@
     line-height: 27px;
     letter-spacing: 0em;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--bs-white);
 }
 
 .new {
@@ -243,8 +252,8 @@
     letter-spacing: 0em;
     text-align: left;
     padding: 11px 34px;
-    color: white;
-    background: #010080;
+    color: var(--bs-white);
+    background: var(--bs-darkblue);
     border: none;
     border-radius: 4px;
 }
@@ -257,8 +266,8 @@
     letter-spacing: 0em;
     text-align: left;
     padding: 10px 12px;
-    color: white;
-    background: #010080;
+    color: var(--bs-white);
+    background: var(--bs-darkblue);
     border: none;
     border-radius: 4px;
 }
@@ -272,7 +281,7 @@
 
 .card2 {
     padding: 11px;
-    background-color: #EEEEEE;
+    background-color: var(--bs-lightgrey);
     max-width: 1774px;
     height: 100%;
     border-radius: 40px;
@@ -287,7 +296,7 @@
 
 .card4 {
     padding: 11px;
-    background-color: #EEEEEE;
+    background-color: var(--bs-lightgrey);
     max-width: 1774px;
     height: 100%;
     border-radius: 40px;
@@ -298,7 +307,7 @@
 
 .card3 {
     padding: 11px;
-    background-color: #EEEEEE;
+    background-color: var(--bs-lightgrey);
     max-width: 1774px;
     height: 100%;
     border-radius: 40px;
@@ -316,7 +325,7 @@
 }
 
 .grid-card {
-    background-color: #FFFFFF;
+    background-color: var(--bs-white);
     padding: 17px 37px;
     position: absolute;
     bottom: 20px;
@@ -324,7 +333,7 @@
 }
 
 .grid-card2 {
-    background-color: #FFFFFF;
+    background-color: var(--bs-white);
     padding: 17px 53px;
     position: absolute;
     bottom: 20px;
@@ -332,7 +341,7 @@
 }
 
 .grid-card3 {
-    background-color: #FFFFFF;
+    background-color: var(--bs-white);
     padding: 17px 11px;
     position: absolute;
     bottom: 26px;
@@ -383,7 +392,7 @@
 
 .line {
     width: 100%;
-    border: 1px solid #FFFFFF
+    border: 1px solid var(--bs-white);
 }
 
 .paint1 {
@@ -636,7 +645,7 @@
 }
 
 .border-b {
-    border-bottom: 1px dashed black;
+    border-bottom: 1px dashed var(--bs-basicblack);
 }
 
 @media (min-width:576px) {
@@ -650,11 +659,21 @@
         --fs-lg: 48px;
         --fs-xl: 64px;
         --fs-2xl: 64px;
+        /* colors */
+        --bs-darklight: darkblue;
+        --bs-yellow: #D2DA60;
+        --bs-darkblue: #010080;
+        --bs-purple: #9003E5;
+        --bs-black: #00000099;
+        --bs-white: #FFFFFF;
+        --bs-offwhite: #F0F0F0;
+        --bs-lightgrey: #EEEEEE;
+        --bs-basicblack: black;
     }
 
     .box3 {
         padding: 100px;
-        background: #F0F0F0;
+        background: var(--bs-offwhite);
         border-radius: 10px;
         border: none;
     }
@@ -664,19 +683,21 @@
 
 @media (min-width:768px) {
     .border-md-right {
-        border-right: 1px dashed black;
+        border-right: 1px dashed var(--bs-basicblack);
     }
 
     .border-md-b {
-        border-bottom: 1px dashed black;
+        border-bottom: 1px dashed var(--bs-basicblack);
     }
 
     .border-mb-none-b {
         border-bottom: none;
     }
-.pl-md-2{
-    padding-left: 2rem;
-}
+
+    .pl-md-2 {
+        padding-left: 2rem;
+    }
+
     :root {
         /* font-size */
         --fs-xxs: 18px;
@@ -687,6 +708,16 @@
         --fs-lg: 48px;
         --fs-xl: 64px;
         --fs-2xl: 74px;
+        /* colors */
+        --bs-darklight: #8A3E74;
+        --bs-yellow: #D2DA60;
+        --bs-darkblue: #010080;
+        --bs-purple: #9003E5;
+        --bs-black: #00000099;
+        --bs-white: #FFFFFF;
+        --bs-offwhite: #F0F0F0;
+        --bs-lightgrey: #EEEEEE;
+        --bs-basicblack: black;
     }
 
     .btn3 {
@@ -697,15 +728,15 @@
         letter-spacing: 0em;
         text-align: left;
         padding: 24px 49px;
-        color: white;
-        background: #010080;
+        color: var(--bs-white);
+        background: var(--bs-darkblue);
         border: none;
         border-radius: 4px;
     }
 
     .box3 {
         padding: 175px 224px 140px 201px;
-        background: #F0F0F0;
+        background: var(--bs-offwhite);
         border-radius: 45px;
         border: none;
     }
@@ -723,6 +754,16 @@
         --fs-lg: 48px;
         --fs-xl: 64px;
         --fs-2xl: 114px;
+        /* colors */
+        --bs-darklight: #8A3E74;
+        --bs-yellow: #D2DA60;
+        --bs-darkblue: #010080;
+        --bs-purple: #9003E5;
+        --bs-black: #00000099;
+        --bs-white: #FFFFFF;
+        --bs-offwhite: #F0F0F0;
+        --bs-lightgrey: #EEEEEE;
+        --bs-basicblack: black;
     }
 
     .pr-lg-45 {
@@ -731,7 +772,7 @@
 
     .box3 {
         padding: 175px 224px 140px 201px;
-        background: #F0F0F0;
+        background: var(--bs-offwhite);
         border-radius: 45px;
         border: none;
     }
@@ -745,11 +786,11 @@
     }
 
     .border-lg-right {
-        border-right: 1px dashed black;
+        border-right: 1px dashed var(--bs-basicblack);
     }
 
     .border-lg-b {
-        border-bottom: 1px dashed black;
+        border-bottom: 1px dashed var(--bs-basicblack);
     }
 
     .border-lg-right-none {
@@ -762,7 +803,7 @@
 
     .card2 {
         padding: 54px 123px 54px 136px;
-        background-color: #EEEEEE;
+        background-color: var(--bs-lightgrey);
         max-width: 1774px;
         height: 465px;
         border-radius: 40px;
@@ -773,7 +814,7 @@
 
     .card3 {
         padding: 54px 136px 54px 123px;
-        background-color: #EEEEEE;
+        background-color: var(--bs-lightgrey);
         max-width: 1774px;
         height: 465px;
         border-radius: 40px;
@@ -784,7 +825,7 @@
 
     .card4 {
         padding: 54px 123px 54px 136px;
-        background-color: #EEEEEE;
+        background-color: var(--bs-lightgrey);
         max-width: 1774px;
         height: 465px;
         border-radius: 40px;
@@ -828,7 +869,7 @@
 
     .card2 {
         padding: 54px 123px 54px 136px;
-        background-color: #EEEEEE;
+        background-color: var(--bs-lightgrey);
         max-width: 1774px;
         height: 365px;
         border-radius: 40px;
@@ -839,7 +880,7 @@
 
     .card3 {
         padding: 54px 136px 54px 123px;
-        background-color: #EEEEEE;
+        background-color: var(--bs-lightgrey);
         max-width: 1774px;
         height: 365px;
         border-radius: 40px;
@@ -850,7 +891,7 @@
 
     .card4 {
         padding: 54px 123px 54px 136px;
-        background-color: #EEEEEE;
+        background-color: var(--bs-lightgrey);
         max-width: 1774px;
         height: 365px;
         border-radius: 40px;
@@ -921,7 +962,7 @@
     label[for="menubar"]>span {
         width: 100%;
         height: 4px;
-        background-color: #9003E5;
+        background-color: var(--bs-darkblue);
         border-radius: 5px;
         margin-top: 5px;
     }
@@ -935,7 +976,7 @@
         left: -100%;
         width: 100%;
         height: 100%;
-        background-color: #D2DA60;
+        background-color: var(--bs-yellow);
         flex-direction: column;
         z-index: 2;
         transition: all 200ms linear;
