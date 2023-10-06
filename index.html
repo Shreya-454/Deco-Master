@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
+<body class="overflow-hidden">
+    <div id="preloader" class="animation bg-black w-100 min-vh-100 position-fixed d-flex justify-content-center align-items-center z_3 duration-300 cursor-pointer">
+        <img src="./assets/images/logo2.png" alt="preloader">
+    </div>
     <header class="bg-yellow">
         <div class="container">
             <nav class="pos-fix  bg-yellow">
@@ -509,7 +512,7 @@
             </div>
         </div>
     </section>
-    <section class="position-relative overflow-hidden pb115">
+    <section class="position-relative overflow-hidden pb115 mi">
         <div class="container">
             <h2 class="sub-head fw-700">Our Process</h2>
             <div class="d-flex justify-content-center pb42">
@@ -537,9 +540,12 @@
                 </svg>
             </div>
         </div>
+        <div class="paint-lines">
+            <img src="./assets/images/paint-lines.png" alt="">
+        </div>
         <div class="my-container">
-            <div class="row pb182">
-                <div class="col-12 col-md-4 col-lg-3">
+            <div class="row justify-content-center" id="order">
+                <div class="col-12 col-md-6 col-lg-4 col-3xl-3 pb182 pb50" id="col1">
                     <p class="d-flex justify-content-center txt2 max-w276 mx-auto text-center">1. Request A Free
                         Estimate
                     </p>
@@ -547,73 +553,62 @@
                         <img src="./assets/images/imgA.png" alt="imgA">
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-4 col-3xl-3 pb50 pb-lg-0" id="col2">
                     <p class="d-flex justify-content-center txt2 max-w276 mx-auto text-center">3. Extensive Prep Work
                     </p>
                     <div class="d-flex justify-content-center">
                         <img src="./assets/images/imgB.png" alt="imgB">
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-4 col-3xl-3 pl-3xl-9 pb50 pb-lg-0" id="col3">
                     <p class="d-flex justify-content-center txt2 max-w181 mx-auto text-center">5. Wash Up & Clean Up</p>
                     <div class="d-flex justify-content-center">
                         <img src="./assets/images/imgC.png" alt="imgC">
                     </div>
                 </div>
-                <div class="col-12 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-4 col-3xl-3 pl-3xl-7 pb50 pb-lg-0" id="col4">
                     <p class="d-flex justify-content-center txt2 max-w276 mx-auto text-center">7. Pay & Enjoy Newly
                         Painted
                         Space!</p>
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center ">
                         <img src="./assets/images/imgD.png" alt="imgD">
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-6 col-lg-4 col-3xl-4 pl-3xl-15 pb50 pb-lg-0" id="col5">
+                    <p class="d-flex justify-content-center txt2 max-w194 mx-auto text-center d-block d-3xl-none">2.
+                        Schedule Your Service
+                    </p>
                     <div class="d-flex justify-content-center">
                         <img src="./assets/images/imgE.png" alt="imgE">
                     </div>
-                    <p class="d-flex justify-content-center txt2 max-w194 mx-auto text-center">2. Schedule Your Service
+                    <p class="d-flex justify-content-center txt2 max-w194 mx-auto text-center d-none d-3xl-block">2.
+                        Schedule Your Service
                     </p>
 
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-6 col-lg-4 col-3xl-4 pl-3xl-7 pb50" id="col6">
+                    <p class="d-flex justify-content-center txt2 max-w194 mx-auto text-center d-block d-3xl-none">4. The
+                        Paint Magic Begins
+                    </p>
                     <div class="d-flex justify-content-center">
                         <img src="./assets/images/imgF.png" alt="imgF">
                     </div>
-                    <p class="d-flex justify-content-center txt2 max-w194 mx-auto text-center">4. The Paint Magic Begins
+                    <p class="d-flex justify-content-center txt2 max-w194 mx-auto text-center d-none d-3xl-block">4. The
+                        Paint Magic Begins
                     </p>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-6 col-lg-4 col-3xl-4 pr-xxl-5 pb50 pb-lg-0" id="col7">
+                    <p class="d-flex justify-content-center txt2 max-w194 mx-auto text-center d-block d-3xl-none">6.
+                        Perform Inspection
+                    </p>
                     <div class="d-flex justify-content-center">
                         <img src="./assets/images/imgG.png" alt="imgG">
                     </div>
-                    <p class="d-flex justify-content-center txt2 max-w194 mx-auto text-center">6. Perform Inspection
+                    <p class="d-flex justify-content-center txt2 max-w194 mx-auto text-center d-none d-3xl-block ">6.
+                        Perform Inspection
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="paint1 d-none d-xxl-block">
-            <img src="./assets/images/paintline1.png" alt="paint">
-        </div>
-        <div class="paint2 d-none d-xxl-block">
-            <img src="./assets/images/paintline2.png" alt="paint2">
-        </div>
-        <div class="paint3 d-none d-xxl-block">
-            <img src="./assets/images/paintline1.png" alt="paint3">
-        </div>
-        <div class="paint4 d-none d-xxl-block">
-            <img src="./assets/images/paintline2.png" alt="paint4">
-        </div>
-        <div class="paint5 d-none d-xxl-block">
-            <img src="./assets/images/paintline1.png" alt="paint5">
-        </div>
-        <div class="paint6 d-none d-xxl-block">
-            <img src="./assets/images/paintline2.png" alt="paint6">
-        </div>
     </section>
     <section class="position-relative">
         <div class="container pb237">
@@ -648,12 +643,12 @@
         </div>
         <div class="my-container">
             <div class="card2 mb-5 mb-lg-0">
-                <div class="row ">
+                <div class="row flex-column-reverse flex-lg-row">
                     <div class="col-12 col-lg-6 mb-4 mb-lg-0">
                         <div class="d-flex">
                             <h3 class="numb">01.</h3>
                             <div>
-                                <h4 class="sub-head ">Residential Projects</h4>
+                                <h4 class="sub-head fw-500 pt-3">Residential Projects</h4>
                                 <p class="para1 max-w471">Lorem Ipsum is simply dummy text of the printing and
                                     typesetting
                                     industry.
@@ -684,7 +679,7 @@
                         <div class="d-flex">
                             <h3 class="numb">02.</h3>
                             <div>
-                                <h4 class="sub-head fw-500">Restoration Projects</h4>
+                                <h4 class="sub-head fw-500 pt-3">Restoration Projects</h4>
                                 <p class="para1 max-w471">Lorem Ipsum is simply dummy text of the printing and
                                     typesetting
                                     industry. Lorem Ipsum
@@ -699,12 +694,12 @@
                 <img src="./assets/images/rainbow-splash1.png" alt="splash6">
             </div>
             <div class="card4 mb-5 mb-lg-0">
-                <div class="row">
+                <div class="row flex-column-reverse flex-lg-row">
                     <div class="col-12 col-lg-6 mb-4 mb-lg-0">
-                        <div class="d-flex">
+                        <div class="d-flex align-baseline">
                             <h3 class="numb">03.</h3>
                             <div>
-                                <h4 class="sub-head fw-500">Commercial Projects</h4>
+                                <h4 class="sub-head fw-500 pt-3">Commercial Projects</h4>
                                 <p class="para1 max-w471">Lorem Ipsum is simply dummy text of the printing and
                                     typesetting
                                     industry. Lorem Ipsum
@@ -976,7 +971,7 @@
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="row">
-                        <div class="col-12 col-md-3">
+                        <div class="col-6 col-md-3 mb-4 mb-md-0">
                             <ul class="pl-0 pl-md-2">
                                 <li class="list-head text-white pb-24">Home</li>
                                 <li class="pb14"><a href="" class="para1 text-white">LINK1</a></li>
@@ -986,7 +981,7 @@
                                 <li><a href="" class="para1 text-white">LINK5</a></li>
                             </ul>
                         </div>
-                        <div class="col-12 col-md-3">
+                        <div class="col-6 col-md-3 mb-4 mb-md-0">
                             <ul class="pl-0 pl-md-2">
                                 <li class="list-head text-white pb-24">About us</li>
                                 <li class="pb14"><a href="" class="para1 text-white">LINK1</a></li>
@@ -996,7 +991,7 @@
                                 <li><a href="" class="para1 text-white">LINK5</a></li>
                             </ul>
                         </div>
-                        <div class="col-12 col-md-3">
+                        <div class="col-6 col-md-3">
                             <ul class="pl-0 pl-md-2">
                                 <li class="list-head text-white pb-24">Contact us</li>
                                 <li class="pb14"><a href="" class="para1 text-white">LINK1</a></li>
@@ -1006,7 +1001,7 @@
                                 <li><a href="" class="para1 text-white">LINK5</a></li>
                             </ul>
                         </div>
-                        <div class="col-12 col-md-3">
+                        <div class="col-6 col-md-3">
                             <ul class="pl-0 pl-md-2">
                                 <li class="list-head text-white pb-24">Portfolio</li>
                                 <li class="pb14"><a href="" class="para1 text-white">LINK1</a></li>
@@ -1023,8 +1018,10 @@
         <div class="line mt-60"></div>
         <div class="container">
             <p class="para1 text-center text-white mb-0 pt-3 pb-5">Copyright © Deco Master , 2021.</p>
+            <button class="btn4 pos-fix1" id="backtotop" onclick="window.scrollTo(0,0)">Top</button>
         </div>
     </footer>
+    <script src="./assets/js/btn.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>

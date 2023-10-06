@@ -6,7 +6,6 @@
     text-decoration: none !important;
     list-style-type: none !important;
     box-sizing: border-box !important;
-    /* outline: 2px solid red; */
 }
 
 :root {
@@ -272,7 +271,19 @@
     border-radius: 4px;
 }
 
-
+.btn4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--fs-xxs);
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 11px 34px;
+    color: var(--bs-basicblack);
+    background: var(--bs-yellow);
+    border: none;
+    border-radius: 4px;
+}
 
 .card1 {
     width: 100%;
@@ -331,7 +342,15 @@
     bottom: 20px;
     left: 36px;
 }
-
+.pos-fix1{
+    position: fixed;
+    bottom:20px;
+    right: 20px;
+    z-index: 2;
+}
+.d_none{
+    display: none;
+}
 .grid-card2 {
     background-color: var(--bs-white);
     padding: 17px 53px;
@@ -346,6 +365,44 @@
     position: absolute;
     bottom: 26px;
     left: 36px;
+}
+
+.paint-lines {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    display: none;
+
+}
+
+#col1 {
+    order: 1;
+}
+
+#col2 {
+    order: 3;
+}
+
+#col3 {
+    order: 5;
+}
+
+#col4 {
+    order: 7;
+}
+
+#col5 {
+    order: 2;
+}
+
+#col6 {
+    order: 4;
+}
+
+#col7 {
+    order: 6;
 }
 
 .pos-abs1 {
@@ -393,48 +450,6 @@
 .line {
     width: 100%;
     border: 1px solid var(--bs-white);
-}
-
-.paint1 {
-    position: absolute;
-    top: 33%;
-    left: 9%;
-    z-index: -1;
-}
-
-.paint2 {
-    position: absolute;
-    top: 31%;
-    left: 22%;
-    z-index: -1;
-}
-
-.paint3 {
-    position: absolute;
-    z-index: -1;
-    top: 34%;
-    left: 34%;
-}
-
-.paint4 {
-    position: absolute;
-    top: 33%;
-    left: 45%;
-    z-index: -1;
-}
-
-.paint5 {
-    position: absolute;
-    top: 34%;
-    z-index: -1;
-    left: 58%;
-}
-
-.paint6 {
-    position: absolute;
-    top: 29%;
-    z-index: -1;
-    right: 12%;
 }
 
 .splash1 {
@@ -550,9 +565,8 @@
     padding-bottom: 251px;
 }
 
-.pb182 {
-    padding-bottom: 65px;
-}
+
+
 
 .pt-54 {
     padding-top: 54px;
@@ -561,8 +575,6 @@
 .pr12 {
     padding-right: 12px;
 }
-
-
 
 .pb237 {
     padding-bottom: 60px;
@@ -584,12 +596,20 @@
     padding-bottom: 42px;
 }
 
+.pb182 {
+    padding-bottom: 0px;
+}
+
 .mt-60 {
     margin-top: 60px;
 }
 
 .pb115 {
     padding-bottom: 115px;
+}
+
+.pb50 {
+    padding-bottom: 50px;
 }
 
 .mb-18 {
@@ -647,6 +667,31 @@
 .border-b {
     border-bottom: 1px dashed var(--bs-basicblack);
 }
+/* preloader */
+.duration-300{
+    transition: 300ms linear;
+}
+.pointer_event_none{
+    pointer-events: none;
+}
+.z_3{
+    z-index: 3;
+}
+.animation{
+    animation: swing 2s linear infinite;
+}
+@keyframes swing{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
 
 @media (min-width:576px) {
     :root {
@@ -779,10 +824,10 @@
 
     .my-container {
         max-width: 1920px;
-        margin-left: 0;
-        margin-left: 0;
-        padding-left: 0;
-        padding-right: 0;
+        margin-left: auto;
+        margin-left: auto;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 
     .border-lg-right {
@@ -847,10 +892,6 @@
         line-height: 36px;
         letter-spacing: 0em;
         border: none;
-    }
-
-    .pb182 {
-        padding-bottom: 182px;
     }
 
     .pb237 {
@@ -942,6 +983,86 @@
 
 }
 
+@media (min-width:1920px) {
+    .paint-lines {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        display: block;
+    }
+
+    .col-3xl-4 {
+        width: 33.33%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .col-3xl-3 {
+        width: 25%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .pl-3xl-9 {
+        padding-left: 9%;
+    }
+
+    .pl-3xl-15 {
+        padding-left: 15%;
+    }
+
+    .pl-3xl-7 {
+        padding-left: 7%;
+    }
+
+    .pr-3xl-5 {
+        padding-right: 5%;
+    }
+
+    .d-3xl-block {
+        display: block !important;
+    }
+
+    #col1 {
+        order: 1;
+    }
+
+    #col2 {
+        order: 2;
+    }
+
+    #col3 {
+        order: 3;
+    }
+
+    #col4 {
+        order: 4;
+    }
+
+    #col5 {
+        order: 5;
+    }
+
+    #col6 {
+        order: 6;
+    }
+
+    #col7 {
+        order: 7;
+    }
+
+    .d-3xl-none {
+        display: none !important;
+    }
+
+    .pb182 {
+        padding-bottom: 182px;
+    }
+
+}
+
 @media(max-width:992px) {
     label[for="menubar"] {
         display: flex;
@@ -1015,5 +1136,4 @@
         right: 1px;
         z-index: 2;
     }
-
 }
